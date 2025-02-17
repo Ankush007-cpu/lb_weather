@@ -1,0 +1,74 @@
+body{
+    background-color: #181916;
+}
+
+.homeMain{
+    width: 500px;
+    min-height: 600px;
+    margin:  auto;
+    color: white;
+    text-align: center;
+    padding-block: 35px;
+}
+
+.homeMain h1{
+    font-weight: 500;
+    font-family: "Berkshire Swash", serif;
+    font-size: 40px;
+    overflow: hidden; /* Hides the text while it's being typed */
+    border-right: 4px solid #DD9522; /* Creates a cursor effect */
+    white-space: nowrap; /* Prevents the text from wrapping */
+    width: 0;
+    animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite; /* Typing and blinking cursor */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent; /* Makes the cursor blink */
+    }
+}
+
+.homeMain img{
+    width: 70%;
+    animation: imageChange 2s infinite; /* Image change animation */
+}
+
+@keyframes imageChange {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.homeMain p{
+    margin-top: 25px;
+}
+
+.homeMain button{
+    margin-top: 30px;
+    width: 290px;
+    height: 60px;
+    border-radius: 15px;
+    background-color: #DD9522;
+    color: white;
+    border: none;
+    font-size: 19px;
+    font-weight: bolder;
+    transition: all 0.3s ease; /* Button animation on hover */
+}
+
+.homeMain button:hover{
+    transform: scale(1.05); /* Button scale on hover */
+    background-color: #C67B1F; /* Darken button color on hover */
+}
